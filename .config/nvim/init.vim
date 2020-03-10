@@ -8,18 +8,23 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.config/nvim/plugged')
-Plug 'dracula/vim', {'as': 'dracula'}
-Plug 'editorconfig/editorconfig-vim'
+" Niceties
 Plug 'itchyny/lightline.vim'
 Plug 'machakann/vim-highlightedyank'
 Plug 'matveyt/vim-modest'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'NLKNguyen/papercolor-theme'
 Plug 'sheerun/vim-polyglot'
-Plug 'SirVer/ultisnips'
-Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-vinegar'
 
+" Code completion
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'antoinemadec/coc-fzf'
+Plug 'SirVer/ultisnips'
+
+" Code formatting
+Plug 'editorconfig/editorconfig-vim'
+Plug 'tpope/vim-commentary'
+
+" Navigation
+Plug 'tpope/vim-vinegar'
 Plug 'junegunn/fzf', { 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
 call plug#end()

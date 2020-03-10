@@ -49,4 +49,4 @@ function! s:show_documentation()
 endfunction
 
 " Show file outline
-nnoremap <silent> <leader>t :<C-u>CocList outline<CR>
+nnoremap <silent> <leader>t :<C-u>CocFzfList outline<CR>

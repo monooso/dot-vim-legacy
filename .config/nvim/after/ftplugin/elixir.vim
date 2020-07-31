@@ -1,4 +1,6 @@
 " -----------------------------------------------------------------------------
-" Lightline
+" Elixir
 " -----------------------------------------------------------------------------
-let g:lightline = { 'colorscheme': 'one' }
+
+" Automatically format Elixir files on save, using vim-autoformat
+autocmd BufWrite * :Autoformat

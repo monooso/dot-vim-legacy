@@ -8,25 +8,33 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.config/nvim/plugged')
+" Colour schemes
+Plug 'dracula/vim'
+Plug 'liuchengxu/space-vim-theme'
+
 " Niceties
 Plug 'itchyny/lightline.vim'
 Plug 'machakann/vim-highlightedyank'
-Plug 'matveyt/vim-modest'
 Plug 'sheerun/vim-polyglot'
 
-" Code completion
+" Code formatting and completion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'alvan/vim-closetag'
 Plug 'antoinemadec/coc-fzf'
-Plug 'SirVer/ultisnips'
-
-" Code formatting
+Plug 'Chiel92/vim-autoformat'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'elixir-editors/vim-elixir'
+Plug 'SirVer/ultisnips'
 Plug 'tpope/vim-commentary'
 
 " Navigation
 Plug 'tpope/vim-vinegar'
 Plug 'junegunn/fzf', { 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
+
+" Oddments
+Plug 'janko/vim-test'
+
 call plug#end()
 
 " -----------------------------------------------------------------------------
@@ -55,7 +63,7 @@ nnoremap <C-k> :silent! m-2<CR>
 " Dayum gurl, you purdy
 " -----------------------------------------------------------------------------
 set background=light
-colorscheme modest
+colorscheme space_vim_theme
 
 " Show cursor position in status bar
 set ruler

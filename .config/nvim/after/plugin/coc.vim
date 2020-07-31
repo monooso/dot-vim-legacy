@@ -50,3 +50,6 @@ endfunction
 
 " Show file outline
 nnoremap <silent> <leader>t :<C-u>CocFzfList outline<CR>
+
+" Go to definition
+nnoremap <silent> gd <Plug>(coc-definition)

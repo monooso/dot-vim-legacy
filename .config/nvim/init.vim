@@ -62,8 +62,8 @@ nnoremap <C-k> :silent! m-2<CR>
 " -----------------------------------------------------------------------------
 " Dayum gurl, you purdy
 " -----------------------------------------------------------------------------
-set background=light
-colorscheme space_vim_theme
+set background=dark
+colorscheme dracula
 
 " Show cursor position in status bar
 set ruler
